@@ -1,0 +1,53 @@
+Spring boot -  framework to bootstrap (fast) to setup Spring application.
+Production ready
+
+What is spring boot ?
+spring + boot
+Spring - it is spring framework
+boot- bootstrap
+
+offical definition- easy to create stand-alone , production grade ,spring based application that you can just run.!
+
+what is spring ?
+	dependency injection - 2006
+	but changed a lott..!!!
+	now it is application framework.- enterprise java application
+	most of the application have some common things such as transaction (DB), etc. Spring provide template for the same.
+
+	Programming and configuration model(
+	Infraturtue support -  oralce, mysl, mongo db.
+
+Pblm with Spring
+
+	Huge framework
+	Mutiple setup steps -  have more capability leads to need more configuration.
+	Mutiple configuration steps
+	Mutiple build and deploy steps - lot of capability and flexibility 
+
+can we absstract these steps ?
+ 80 % configuration are common for each application  , so absstract these ---> spring boot.
+
+
+what spring boot give us ?
+	Optionated - Already configuration and provide a starting point.
+	convention over configuration -   80 % alreayd there, so no need to do much configuration.
+	Standalone -  normally, spring output is war, then need to deploy in tomcat like serverlet., but spring boot already contains tomcat , so can run as standalone.
+	Production Ready- 
+
+
+Start / Create Spring boot Application
+1. Using Spring  STS - Spring Tool Suite
+2. Use Maven ( build and dependency management tool)
+3. Spring intializer
+
+
+1. Using Maven
+
+	spring come with lot of starter...!!!
+
+
+
+	
+ 
+
+
