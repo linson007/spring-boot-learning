@@ -44,7 +44,45 @@ Start / Create Spring boot Application
 1. Using Maven
 
 	spring come with lot of starter...!!!
+	
+	In pom.xml, we have a parent  - spring-boot-starter-parent ,
+	this contains that 80 % percentage configuration of spring boot.
+	this parent provide the Optionated concept of Spring .!
+	
+	dependency in pom 
+		if we need to create a web application, we need to add a lot of jars need to add to build a web Application.
+		But spring boot come with a dependency ,a single dependency will include all the required dependencies.
+		example,
+			spring-boot-starter-web  -dependency
+			
+			
+			
+Create a project
 
+ create a main program
+ 
+ @SpringBootApplication
+ 
+  main(String args[])
+   SpringApplication(MainApplication.class,args);
+	
+		static method run 
+		
+			*set up default configuration
+			*start spring application context ( spring is a container for the application / services)
+			*perfroms  class path scan -  go through all the classes in the src folder,  we have different classes in the src folder, each clases we are specify 
+			a special meaning by addding some annotation such RestController ,Services etc. So spring do  a class path scan.
+			*Starts Tomcat server.
+
+
+Controller
+
+	A java class
+	marked with Annotation - RestController
+	
+	Has contains
+		URL access and assoicate method.
+		
 
 
 	
