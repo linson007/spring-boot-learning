@@ -83,6 +83,62 @@ Controller
 	Has contains
 		URL access and assoicate method.
 		
+	
+	@RequestMapping("/topics")
+			by default GET method.
+			if  the method return a String ,then String,
+			if the method return a list, then it is convert into json automatically..!!!
+			Spring MVC controller is doing this conversion.
+			
+	
+	How to design Spring boot application
+	1. identify the resources / Identify.
+		course api - topic, course,lession
+		For a topic have different courses and each courses having many lession.
+		
+			standard design
+			GET /topics  Get all topics
+			GET /topics/id Gets the topic
+			POST /topics	Create new topic - post body contains the json to add
+			PUT /topics/id Update the topic
+			DELETE /topics/id Delete the topic
+			
+			
+	Business Service
+		In Spring, service is a singleton instance.
+		To create a service, create java class, then add the  @Service
+		in spring, business service is singleton, when the application is started, spring created a instance and keep in the memory,
+		if any controller is using this service, Spring will provide this .
+		
+		In any controller, we can create the serivce as  private member and marked as Autowired, then Spring will create a dependency injection and provide the singleton class of that service.
+		
+		
+		
+Application Properties - Customizing spring boot
+
+	one tipical way to customize configuration using application.properties file.(property file)
+	in the resource file.
+	example
+		server.port=8081
+			
+	https://docs.spring.io/spring-boot/docs/2.0.4.RELEASE/reference/html/common-application-properties.html
+	https://docs.spring.io/spring-boot/docs/current/reference/html/appendix-application-properties.html	
+	
+Spring Data JPA - the data Tier
+
+	JPA - Java Persistance API
+
+		let do ORM (Object Relational Mapping)
+		relational Database - primary key, foreign key
+		ORM let you to mapping Enitity class to Table.
+		Class <> Table
+		all the operations will done by JPA .
+		
+	
+	
+
+			
+	
 
 
 	
