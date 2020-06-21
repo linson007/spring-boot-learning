@@ -134,6 +134,19 @@ Spring Data JPA - the data Tier
 		Class <> Table
 		all the operations will done by JPA .
 		
+		Entity mapping Class- added Entity(@Enitity) Annotation and Primary key (@Id) annotation.
+		Topic Table and each member variable as columns and each instance of the topic will be rows
+		
+		Todo - insert, update, operation. Some class required to this operation- For that we need to create a repository.
+		this operation is common for all the entity.
+		So, Spring entity come up with a implementation , So we not need to create a class, only interface , Spring will create the class.!!
+		
+		one common repository - CrudRepository. - contains logic for any entity. So we need to extends that only.
+		// This is a generic Type - We need to provide generic info of Entity and Primary key - <Topic, String >
+		public interface TopicRepository extends CrudRepository<Topic, String >{
+		}
+
+		
 	
 	
 
